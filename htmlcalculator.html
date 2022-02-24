@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<center><h1 style="color: yellow;">My Calculator</h1>
+<body bgcolor="#000000" text="gold">
+<style type="text/css">
+	.button{
+		color:black;
+		background: #ffff00;
+		width: 40px;
+		height: 40px;
+		font-family: 'Gloria Hallelujah',cursive;
+		font-size: 20px;
+	}
+	.c{
+		color: black;
+		background: red;
+		width: 85px;
+		height: 40px;
+		font-family: 'Gloria Hallelujah',cursive;
+		font-size: 20px;
+	}
+	.box{
+			
+		width: 165px;
+		height: 40px;
+	}
+</style>
+<form name="Calculator">
+	<input type="button" value="1" onClick = "document.Calculator.ans.value+='1'" class="button">
+	<input type="button" value="2" onClick = "document.Calculator.ans.value+='2'" class="button">
+	<input type="button" value="3" onClick = "document.Calculator.ans.value+='3'" class="button">
+	<input type="button" value="+" onClick = "document.Calculator.ans.value+='+'" class="button"><br>
+	<input type="button" value="4" onClick = "document.Calculator.ans.value+='4'" class="button">
+	<input type="button" value="5" onClick = "document.Calculator.ans.value+='5'" class="button">
+	<input type="button" value="6" onClick = "document.Calculator.ans.value+='6'" class="button">			
+	<input type="button" value="*" onClick = "document.Calculator.ans.value+='*'" class="button"><br>
+	<input type="button" value="7" onClick = "document.Calculator.ans.value+='7'" class="button">	
+	<input type="button" value="8" onClick = "document.Calculator.ans.value+='8'" class="button">
+	<input type="button" value="9" onClick = "document.Calculator.ans.value+='9'" class="button">
+    <input type="button" value="-" onClick = "document.Calculator.ans.value+='-'" class="button"><br>
+    <input type="button" value="/" onClick = "document.Calculator.ans.value+='/'" class="button">
+    <input type="button" value="=" onclick="document.Calculator.ans.value = eval(document.Calculator.ans.value)" class="button">
+    <input type="reset"  value="Clr" class="c"><br><br>
+    <input type="textfield" name="ans" value="" class="box" style="font-size: 20px;">
+</form>
+</center>
+
+</body>
+</html>
